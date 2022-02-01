@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter une vidéo{% endblock %}
+
+{% block body %}
+    <div class="container mt-5 mb-5" style="max-width: 800px;">
+        <div class="row">
+            <div class="card p-3">
+                <div class="col">
+                    {{ form(form, { attr: {'id': 'form_video' } }) }}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" id="videos_list">
+            {% for video in videos %}
+                {% include 'home/video.html.twig' %}
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
