@@ -1,4 +1,4 @@
-# Dépôt pour la création d'un formulaire somis en AJAX
+# Dépôt pour la création d'un formulaire soumis en AJAX
 
 ### YouTube
 
